@@ -1,0 +1,15 @@
+{
+  "name": "Starlink",
+  "short_name": "Starlink",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "black",
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "sizes": "180x180"
+    }
+  ]
+}
