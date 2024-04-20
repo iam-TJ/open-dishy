@@ -48,9 +48,9 @@ The NETWORK STATISTICS and SPEED (test) functionality depends on the Starlink Wi
 
 ## How it Works
 
-Originally the User Terminal (a.k.a. dishy.starlink.com on 192.168.100.1) served a large HTML file and associated fonts, images, and Javascript. In early 2024 the content of the HTML file was mostly removed, leaving only a Starlink logo. Investigations showed that the supporting Javascript, fonts, and images were still available and/or being served. The original HTML was recovered from a saved web page from 2023. The page included embedded fonts and images which have been extracted. All are stored inthe ./assets/ directory.
+Originally the User Terminal (a.k.a. dishy.starlink.com on 192.168.100.1) served a large HTML file and associated fonts, images, and Javascript. In early 2024 the content of the HTML file was mostly removed, leaving only a Starlink logo. Investigations showed that the supporting Javascript, fonts, and images were still available and/or being served. The original HTML was recovered from a saved web page from 2023. The page included embedded fonts and images which have been extracted. All are stored in the ./assets/ directory.
 
-The HTML and Javascript was originally minified to save space. That has been reversed so the code can be read and edited easily - these files have "mod" in their names and are served by default to aid invesitgations in the browser developer tools.
+The HTML and Javascript was originally minified to save space. That has been reversed so the code can be read and edited easily - these files have "mod" in their names and are served by default to aid investigations in the browser developer tools.
 
 There are two Javascript files: api.bundle.web.js and app.bundle.web.js. This repository contains two copies of each file; the saved 2023 and latest 2024 versions. It turns out app.bundle.web.js hasn't changed; api.bundle.web.js doubled in size but - strangely - when deminified (using Firefox developer tools to Pretty-print it) the files are almost identical in both size and content - excepting different variable names due to minification. So far investigations into the doubling of size have failed to determine the cause.
 
