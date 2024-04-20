@@ -1,6 +1,6 @@
 server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
+	listen 80;
+	listen [::]:80;
 	server_name dishy.starlink.com;
 	root /var/www/dishy.starlink.com/;
 	index index.html;
@@ -8,8 +8,8 @@ server {
 	add_header Vary Origin;
 }
 server {
-	listen 9201 default_server;
-	listen [::]:9201 default_server;
+	listen 9201;
+	listen [::]:9201;
 	server_name dishy.starlink.com;
 	root /var/www/dishy.starlink.com/;
 	location / {
