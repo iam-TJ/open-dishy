@@ -4,20 +4,24 @@ Reimplement the web interface and functionality removed from Starlink User Termi
 
 ## Overview
 
-Use a stand-alone web-server to provide the traditional web-based "dishy" interface; only making generic Remote Procedure Calls (gRPC) to the User Terminal (U.T.). 
+Use a stand-alone local web-server to provide the web-based "dishy" interface; only making generic Remote Procedure Calls (gRPC) to the User Terminal (U.T.). This project contains the files to be served and specimen configurations for several popular web servers. In the future it may add modified, improved, or themed alternatives. 
+
+This guide is tailored towards GNU/Linux and BSD Unix based operating systems. Contributions with instructions for other operating systems, web-servers, and DNS servers are welcome (especially for openwrt), as are modifications and clean-ups of the code (can we lose the apparently unrequired CSS classes in almost every `DIV` element of `index.html` ? )
 
 ## Installation
 
 ### 0. Prerequisites
 
-  1. web-server must have direct route to 192.168.100.1 (the U.T.)
+  1. web-server host must have direct route to 192.168.100.1 (the U.T.)
   2. firewall must allow connections to/from TCP port 9201 on the U.T.
 
 ### 1. Web server
 
-Included are simple configuration files for popular web servers. These should be installed and enabled according to the web-server's documentation. Server-specific instructions may be found in README.md files in the sub-directories here. Currently supported: nginx apache2 lighttpd
+Included are simple configuration files for popular web servers. These should be installed and enabled according to the web-server's documentation. Server-specific instructions may be found in README.md files in the sub-directories here. Currently included: nginx apache2 lighttpd (fails - see ./web-servers/lighttpd/README.md)
 
 The files in this repository under ./dishy.starlink.com/ should be copied into the web-server's usual serving base. On Debian based operating systems this would mean copying the directory and all its contents to `/var/www/` using `cp -a dishy.starlink.com /var/www/` - the configurations provided here all use `/var/www/dishy.starlink.com/` as the 'root' directory of the virtual server and set the default index to be `index.html`.
+
+In most cases the web-server user account must be given access to the files: `chown -R www-data:www-data /var/www/dishy.starlink.com`
 
 ### 2. Hostnames
 
