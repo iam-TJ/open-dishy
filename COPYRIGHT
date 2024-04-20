@@ -1,0 +1,12 @@
+## AGPL-3.0 (Affero General Public Licence version 3.0)
+
+README.md
+web-servers/*
+dishy.starlink.com/index.html (my modifications and ongoing clean-up)
+
+## Various Open Source Licences (terms embedded in Javascript code!)
+
+dishy.starlink.com/assets/*.js
+
+## SpaceX / Starlink
+dishy.starlink.com/assets/*.png
