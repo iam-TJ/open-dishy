@@ -22,8 +22,10 @@ These files are served by the User Terminal. Here we document the various librar
 | MIT | (https://github.com/ai/nanoid) | `ModuleSymbhasOwnPr-0123456789ABCDEFGHNRVfgctiUvz_KqYTJkLxpZXIjQW` |
 | MIT | (https://github.com/fantasyland/fantasy-land) | `fantasy-land/equals` |
 | Apache 2.0 | (https://github.com/cognitect-labs/transducers-js) | `transducer/step` |
-| MIT or GPLv3  | (https://github.com/Stuk/jszip/tree/main) | `Corrupted zip or bug : unexpected signature` |
+| MIT or GPLv3  | (https://github.com/Stuk/jszip) | `Corrupted zip or bug : unexpected signature` |
 | MIT | (https://github.com/davidbau/seedrandom) | `c.tychei =` |
+| MIT  | (https://github.com/opentypejs/opentype.js) | `Unsupported OpenType flavor ` |
+| MIT  | (https://github.com/mrdoob/three.js/) | `ACESFilmicToneMapping` |
 
 TODO: complete analyse of script
 
