@@ -34,8 +34,12 @@ Analysis is done on the un-minified code produced by Firefox developer tools Pre
 | MIT  | (https://github.com/opentypejs/opentype.js) | `Unsupported OpenType flavor ` |
 | MIT  | (https://github.com/mrdoob/three.js/) | `ACESFilmicToneMapping` |
 | MIT  | (https://github.com/hammerjs/hammer.js) | `emit('hammer.input'` |
+| ?    | Google Firebase | `firebase.initializeApp()` |
+| Apache 2.0  | (https://github.com/apache/cordova) | `cordova.plugins.browsertab.isAvailable` |
+| MIT | (https://github.com/getsentry/sentry-javascript) | `npm:@sentry/browser` |
+| MIT | (https://github.com/expo/expo) | `No native ExponentFileSystem module found` |
 
-Starlink specific code appears to start at line 161039.
+Starlink specific code appears to start at line 139882.
 
 #### Language-specific configuration and strings:
 
@@ -53,7 +57,7 @@ These are badly encoded; each language table is around 78KiB in size and contain
 | 149394 | pt_BR | Brazilian | Yr |
 | 149402 | pt_PT | Portugese | jr |
 
-
+An array containing what appears to be satellite path segments is at line 281885. It is extracted and reformatted with one segment per line in the file `Satellite-path-segments.js`
 
 TODO: complete analysis of script
 
