@@ -22,6 +22,11 @@ That will enable implemention of a completely new, open-source, interface - and 
 Analysis is done on the un-minified code produced by Firefox developer tools Pretty Print functionality.
 
 ### app.bundle.web.2023_mod.js
+
+At the end of this bundle (around line 294980) is an array of 679 embedded project details and the full texts of their licences. This has been extracted to `Javascript-licenses.js` - it takes up over 1MiB of space.
+
+Following is the results of manual inspection of the bundle.
+
 | Licence    | Project | Identifier |
 | ---------- | ------- | ---------- |
 | MIT | (https://github.com/facebook/react/) | `https://reactjs.org/docs/error-decoder.html` |
