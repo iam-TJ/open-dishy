@@ -5,6 +5,7 @@ server {
 	server_name dishy.starlink.com;
 	root /var/www/dishy.starlink.com/;
 	index index.html;
+  rewrite ^/statistics /index.html last;
 	add_header Access-Control-Allow-Origin http://router.starlink.com:9001;
 	add_header Vary Origin;
 }
