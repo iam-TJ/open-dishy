@@ -44,7 +44,11 @@ On a client that can correctly resolve the hostname dishy.starlink.com to the IP
 
 http://dishy.starlink.com
 
-The NETWORK STATISTICS and SPEED (test) functionality depends on the Starlink Wifi router being reachable from the browser.
+Currently although the STATISTICS link is greyed out (see issue #1) visting the URL directly now works via web-server URL rewriting:
+
+http://dishy.starlink.com/statistics
+
+The NETWORK and SPEED (test) functionality depends on the Starlink Wifi router being reachable from the browser.
 
 ## How it Works
 
