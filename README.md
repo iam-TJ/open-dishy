@@ -64,3 +64,13 @@ To enable easy testing of different combinations of the Javascript files without
 
 The web-server has to proxy requests to 192.168.100.1 TCP port 9201 (the User Terminal) to allow generic Remote Procedure Call (gRPC) queries from the browser to be accepted by the U.T. This is due to how the HTML rewrites its own location to http://dishy.starlink.com/ and the modified Javascript using hostname not IP address combined with the U.T. refusing requests if the Origin and Referer are not dishy.starlink.com (it thinks that is its name but that has to be hijacked to make the separate server work).
 
+## Use with Docker
+
+A docker and docker compose file are included.  To run in a docker container type:
+
+```
+docker compose build
+docker compose up -d
+```
+
+You must still set the name resolution for dishy.starlink.com and router.starlink.com as described above.
