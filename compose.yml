@@ -1,0 +1,6 @@
+services:
+  starlink-web:
+    build: .
+    ports:
+      - "80:80"
+      - "9201:9201"
